@@ -112,6 +112,9 @@ describe('hlx publish --remote (default)', () => {
     assert.ok(Array.isArray(publishBody.configuration.strains));
     assert.equal(publishBody.configuration.strains.length, 4);
     assert.equal(publishBody.vcl, undefined);
+    assert.equal(publishBody.wskAuth, 'fakeauth');
+    assert.equal(publishBody.wskHost, 'doesn.t.matter');
+    assert.equal(publishBody.wskNamespace, 'fakename');
 
     scope.done();
   });

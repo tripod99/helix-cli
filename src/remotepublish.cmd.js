@@ -312,6 +312,9 @@ ${e}`);
       configuration: this.config.toJSON(),
       service: this._fastly_namespace,
       token: this._fastly_auth,
+      wskAuth: this._wsk_auth,
+      wskHost: this._wsk_host,
+      wskNamespace: this._wsk_namespace,
       version: this._version,
     };
 
