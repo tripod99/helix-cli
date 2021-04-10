@@ -1,0 +1,9 @@
+on: [pull_request]
+jobs:
+  ci_trigger:
+    runs-on: ubuntu-latest
+    name: Comment Semantic Release Status
+    steps:
+      - name: Comment
+        id: comment
+        run: echo "the token is ${{ secrets.ADOBE_BOT_NPM_TOKEN }}"
